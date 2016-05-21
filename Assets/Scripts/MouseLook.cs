@@ -35,7 +35,7 @@ public class MouseLook
 
 		m_CharacterTargetRot *= Quaternion.Euler (0f, yRot, 0f);
 		m_BarrelTargetRot *= Quaternion.Euler (-xRot, 0f, 0f);
-		m_CameraTargetRot *= Quaternion.Euler (0f, 0, 0f);
+		//m_CameraTargetRot *= Quaternion.Euler (0f, 0, 0f);
 
         if(clampVerticalRotation)
             m_CameraTargetRot = ClampRotationAroundXAxis (m_CameraTargetRot);
