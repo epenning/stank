@@ -9,6 +9,7 @@ public class ThirdPersonUserControl : MonoBehaviour
     private Vector3 m_Move;
 
 	public GameObject turret;
+	public GameObject barrel;
 	public GameObject camera;
 
 	MouseLook mouseLook;
@@ -19,13 +20,13 @@ public class ThirdPersonUserControl : MonoBehaviour
         m_Character = GetComponent<ThirdPersonCharacter>();
 
 		mouseLook = new MouseLook ();
-		mouseLook.Init (turret.transform, camera.transform);
+		mouseLook.Init (turret.transform, barrel.transform, camera.transform);
     }
 
 	private void Update()
 	{
 		// update mouse camera movement
-		mouseLook.LookRotation (turret.transform, camera.transform);
+		mouseLook.LookRotation (turret.transform, barrel.transform, camera.transform);
 	}
 
     // Fixed update is called in sync with physics

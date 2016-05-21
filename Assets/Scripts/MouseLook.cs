@@ -16,23 +16,26 @@ public class MouseLook
 
 
     private Quaternion m_CharacterTargetRot;
+	private Quaternion m_BarrelTargetRot;
     private Quaternion m_CameraTargetRot;
     private bool m_cursorIsLocked = true;
 
-    public void Init(Transform character, Transform camera)
+	public void Init(Transform character, Transform barrel, Transform camera)
     {
         m_CharacterTargetRot = character.localRotation;
+		m_BarrelTargetRot = barrel.localRotation;
         m_CameraTargetRot = camera.localRotation;
     }
 
 
-    public void LookRotation(Transform character, Transform camera)
+	public void LookRotation(Transform character, Transform barrel, Transform camera)
     {
         float yRot = CrossPlatformInputManager.GetAxis("Mouse X") * XSensitivity;
         float xRot = CrossPlatformInputManager.GetAxis("Mouse Y") * YSensitivity;
 
-		m_CharacterTargetRot *= Quaternion.Euler (-xRot, yRot, 0f);
-        m_CameraTargetRot *= Quaternion.Euler (0f, 0f, 0f);
+		m_CharacterTargetRot *= Quaternion.Euler (0f, yRot, 0f);
+		m_BarrelTargetRot *= Quaternion.Euler (-xRot, 0f, 0f);
+		m_CameraTargetRot *= Quaternion.Euler (0f, 0, 0f);
 
         if(clampVerticalRotation)
             m_CameraTargetRot = ClampRotationAroundXAxis (m_CameraTargetRot);
@@ -41,12 +44,15 @@ public class MouseLook
         {
             character.localRotation = Quaternion.Slerp (character.localRotation, m_CharacterTargetRot,
                 smoothTime * Time.deltaTime);
+			barrel.localRotation = Quaternion.Slerp (barrel.localRotation, m_BarrelTargetRot,
+				smoothTime * Time.deltaTime);
             camera.localRotation = Quaternion.Slerp (camera.localRotation, m_CameraTargetRot,
                 smoothTime * Time.deltaTime);
         }
         else
         {
             character.localRotation = m_CharacterTargetRot;
+			barrel.localRotation = m_BarrelTargetRot;
             camera.localRotation = m_CameraTargetRot;
         }
 
