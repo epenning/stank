@@ -9,6 +9,7 @@ public class ThirdPersonUserControl : MonoBehaviour
     private Vector3 m_Move;
 
 	public GameObject turret;
+	public GameObject barrelPivot;
 	public GameObject barrel;
 	public GameObject camera;
 
@@ -20,18 +21,18 @@ public class ThirdPersonUserControl : MonoBehaviour
         m_Character = GetComponent<ThirdPersonCharacter>();
 
 		mouseLook = new MouseLook ();
-		mouseLook.Init (turret.transform, barrel.transform, camera.transform);
+		mouseLook.Init (turret.transform, barrelPivot.transform, camera.transform);
     }
 
 	private void Update()
 	{
 		// update mouse camera movement
-		mouseLook.LookRotation (turret.transform, barrel.transform, camera.transform);
+		mouseLook.LookRotation (turret.transform, barrelPivot.transform, camera.transform);
 
 		// mouse click
 		if (Input.GetMouseButtonDown (0)) {
 			// spawn a firework
-
+			ShootMissile();
 		}
 	}
 
@@ -50,4 +51,15 @@ public class ThirdPersonUserControl : MonoBehaviour
 
 
     }
+
+	private void ShootMissile()
+	{
+		// instantiate fireworks at end of barrel
+		GameObject fireworks = Instantiate( Resources.Load ("Fireworks", typeof(GameObject))) as GameObject;
+
+		fireworks.transform.localPosition = barrel.transform.localPosition;
+		//fireworks.transform.Translate(new Vector3(0, 0, -barrel.transform.lossyScale.z));
+		fireworks.transform.localRotation = barrel.transform.rotation;
+		fireworks.transform.localPosition = barrel.transform.TransformPoint (fireworks.transform.localPosition);
+	}
 }
