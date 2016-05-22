@@ -27,6 +27,12 @@ public class ThirdPersonUserControl : MonoBehaviour
 	{
 		// update mouse camera movement
 		mouseLook.LookRotation (turret.transform, barrel.transform, camera.transform);
+
+		// mouse click
+		if (Input.GetMouseButtonDown (0)) {
+			// spawn a firework
+
+		}
 	}
 
     // Fixed update is called in sync with physics
