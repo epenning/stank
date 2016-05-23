@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class ThirdPersonCharacter : MonoBehaviour
+public class TankCharacter : MonoBehaviour
 {
 	[SerializeField] float m_MovingTurnSpeed = 180;
 	[SerializeField] float m_StationaryTurnSpeed = 90;

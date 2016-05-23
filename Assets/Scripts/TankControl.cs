@@ -2,10 +2,10 @@ using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-[RequireComponent(typeof (ThirdPersonCharacter))]
-public class ThirdPersonUserControl : MonoBehaviour
+[RequireComponent(typeof (TankCharacter))]
+public class TankControl : MonoBehaviour
 {
-    private ThirdPersonCharacter m_Character; // A reference to the ThirdPersonCharacter on the object
+    private TankCharacter m_Character; // A reference to the TankCharacter on the object
     private Vector3 m_Move;
 
 	public GameObject turret;
@@ -18,7 +18,7 @@ public class ThirdPersonUserControl : MonoBehaviour
     private void Start()
     {
         // get the third person character ( this should never be null due to require component )
-        m_Character = GetComponent<ThirdPersonCharacter>();
+        m_Character = GetComponent<TankCharacter>();
 
 		mouseLook = new MouseLook ();
 		mouseLook.Init (turret.transform, barrelPivot.transform, camera.transform);
