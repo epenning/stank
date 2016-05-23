@@ -1,0 +1,247 @@
+Initialize engine version: 5.3.4f1 (fdbb5133b820)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 675M   (ID=0x1212)
+    Vendor:   NVIDIA
+    VRAM:     1999 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Erin\Documents\Unity Projects\Stealth Tank\Playable\stank_windows_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Erin\Documents\Unity Projects\Stealth Tank\Playable\stank_windows_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Erin\Documents\Unity Projects\Stealth Tank\Playable\stank_windows_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Erin\Documents\Unity Projects\Stealth Tank\Playable\stank_windows_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Erin\Documents\Unity Projects\Stealth Tank\Playable\stank_windows_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Erin\Documents\Unity Projects\Stealth Tank\Playable\stank_windows_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Erin\Documents\Unity Projects\Stealth Tank\Playable\stank_windows_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Erin\Documents\Unity Projects\Stealth Tank\Playable\stank_windows_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Erin\Documents\Unity Projects\Stealth Tank\Playable\stank_windows_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Erin\Documents\Unity Projects\Stealth Tank\Playable\stank_windows_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.052 seconds
+Platform assembly: C:\Users\Erin\Documents\Unity Projects\Stealth Tank\Playable\stank_windows_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Erin\Documents\Unity Projects\Stealth Tank\Playable\stank_windows_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.586716 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 218c -> priority: 1 
+  Thread -> id: 448 -> priority: 1 
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+stopping Fireworks(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.803955 ms
+
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 301.
+Total: 0.525564 ms (FindLiveObjects: 0.376319 ms CreateObjectMapping: 0.020098 ms MarkObjects: 0.085954 ms  DeleteObjects: 0.042335 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.765895 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 301.
+Total: 0.215100 ms (FindLiveObjects: 0.029079 ms CreateObjectMapping: 0.035493 ms MarkObjects: 0.130856 ms  DeleteObjects: 0.018388 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.786422 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 301.
+Total: 0.210824 ms (FindLiveObjects: 0.029506 ms CreateObjectMapping: 0.036349 ms MarkObjects: 0.132994 ms  DeleteObjects: 0.011118 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.772310 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 301.
+Total: 0.211252 ms (FindLiveObjects: 0.025230 ms CreateObjectMapping: 0.036349 ms MarkObjects: 0.131711 ms  DeleteObjects: 0.016250 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.755204 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 301.
+Total: 0.227074 ms (FindLiveObjects: 0.034210 ms CreateObjectMapping: 0.036349 ms MarkObjects: 0.141547 ms  DeleteObjects: 0.014111 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.753066 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 301.
+Total: 0.217238 ms (FindLiveObjects: 0.030362 ms CreateObjectMapping: 0.035921 ms MarkObjects: 0.138126 ms  DeleteObjects: 0.011973 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.744513 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 301.
+Total: 0.209113 ms (FindLiveObjects: 0.030789 ms CreateObjectMapping: 0.036349 ms MarkObjects: 0.129573 ms  DeleteObjects: 0.011546 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.751783 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 301.
+Total: 0.203554 ms (FindLiveObjects: 0.026085 ms CreateObjectMapping: 0.035921 ms MarkObjects: 0.129145 ms  DeleteObjects: 0.011973 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.747079 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 301.
+Total: 0.207830 ms (FindLiveObjects: 0.027796 ms CreateObjectMapping: 0.036349 ms MarkObjects: 0.130856 ms  DeleteObjects: 0.011546 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.750928 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 301.
+Total: 0.207830 ms (FindLiveObjects: 0.029079 ms CreateObjectMapping: 0.035493 ms MarkObjects: 0.130428 ms  DeleteObjects: 0.011973 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.737243 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 301.
+Total: 0.211679 ms (FindLiveObjects: 0.030362 ms CreateObjectMapping: 0.040625 ms MarkObjects: 0.127435 ms  DeleteObjects: 0.011973 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.752211 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 301.
+Total: 0.210824 ms (FindLiveObjects: 0.029934 ms CreateObjectMapping: 0.035921 ms MarkObjects: 0.131711 ms  DeleteObjects: 0.012401 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.739382 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 301.
+Total: 0.215956 ms (FindLiveObjects: 0.030789 ms CreateObjectMapping: 0.040625 ms MarkObjects: 0.131711 ms  DeleteObjects: 0.012401 ms)
+
