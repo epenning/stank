@@ -1249,7 +1249,7 @@ MonoBehaviour:
   barrelPivot: {fileID: 1505369296}
   barrel: {fileID: 959455757}
   camera: {fileID: 1293972115}
-  speed: 10
+  speed: 100
 --- !u!114 &1522444676
 MonoBehaviour:
   m_ObjectHideFlags: 0

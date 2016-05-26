@@ -85,6 +85,8 @@ public class TankControl : MonoBehaviour
 		grapple.transform.localPosition = barrel.transform.TransformPoint (grapple.transform.localPosition);
 
 		grapple.GetComponent<Rigidbody> ().AddForce (grapple.transform.forward * speed, ForceMode.Impulse);
+	
+		grapple.GetComponent<GrappleCollisions> ().inAir = true;
 	}
 
 //
