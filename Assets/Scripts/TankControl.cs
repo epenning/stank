@@ -32,9 +32,9 @@ public class TankControl : MonoBehaviour
 	private void Update()
 	{
 		// update mouse camera movement
-		if (!grappleActive) {
+		//if (!grappleActive) {
 			mouseLook.LookRotation (turret.transform, barrelPivot.transform, camera.transform);
-		}
+		//}
 
 		// mouse click
 		if (Input.GetMouseButtonDown (0)) {
@@ -80,7 +80,10 @@ public class TankControl : MonoBehaviour
 
 		GameObject grapple = Instantiate( Resources.Load ("Grapple", typeof(GameObject))) as GameObject;
 
-		grapple.transform.SetParent (barrel.transform);
+		grapple.transform.localPosition = barrel.transform.localPosition;
+		grapple.transform.localRotation = barrel.transform.rotation;
+		grapple.transform.localPosition = barrel.transform.TransformPoint (grapple.transform.localPosition);
+
 		grapple.GetComponent<Rigidbody> ().AddForce (grapple.transform.forward * speed, ForceMode.Impulse);
 	}
 
