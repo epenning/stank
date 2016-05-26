@@ -78,7 +78,9 @@ public class TankControl : MonoBehaviour
 	{
 		grappleActive = true;
 
-		GameObject grapple = Instantiate( Resources.Load ("Grapple", typeof(GameObject))) as GameObject;
+		GameObject.Destroy (grapple);
+
+		grapple = Instantiate( Resources.Load ("Grapple", typeof(GameObject))) as GameObject;
 
 		grapple.transform.localPosition = barrel.transform.localPosition;
 		grapple.transform.localRotation = barrel.transform.rotation;
@@ -88,21 +90,5 @@ public class TankControl : MonoBehaviour
 	
 		grapple.GetComponent<GrappleCollisions> ().inAir = true;
 	}
-
-//
-//	//To shoot your hook, call this method:
-//	void GrapplingShot(){
-//		rigidbody.velocity = new Vector3 (x, y, z) * speed;
-//		inAir = true;
-//		//This is the direction your hook moves multiplied by speed.
-//	}
-//	void OnCollisionEnter (Collision col) {
-//		if (inAir = true) {
-//			rigidbody.velocity = 0;
-//			inAir = false;
-//			grabHinge = gameObject.AddComponent <HingeJoint>();
-//			grabHinge.connectedBody = col.rigidbody;
-//			//This stops the hook once it collides with something, and creates a HingeJoint to the object it collided with.
-//		}
-//	}
+		
 }

@@ -19,13 +19,16 @@ public class GrappleCollisions : MonoBehaviour {
 
 	void OnCollisionEnter (Collision col) 
 	{
-		if (inAir = true) {
-			gameObject.GetComponent<Rigidbody> ().velocity = new Vector3(0,0,0);
-			inAir = false;
-			grabHinge = gameObject.AddComponent<HingeJoint> ();
-			grabHinge.connectedBody = col.rigidbody;
-			//This stops the hook once it collides with something, and creates a HingeJoint to the object it collided with.
-		}
+		if (col.gameObject.tag != "Player")
+			if (inAir = true) {
+				gameObject.GetComponent<Rigidbody> ().velocity = new Vector3(0,0,0);
+				inAir = false;
+				grabHinge = gameObject.AddComponent<HingeJoint> ();
+				grabHinge.connectedBody = col.rigidbody;
+
+				gameObject.GetComponent<Rigidbody> ().constraints = RigidbodyConstraints.FreezeAll;
+				//This stops the hook once it collides with something, and creates a HingeJoint to the object it collided with.
+			}
 	}
 
 }

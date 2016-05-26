@@ -689,8 +689,7 @@ Transform:
   - {fileID: 473179581}
   - {fileID: 66521256}
   - {fileID: 128232097}
-  - {fileID: 1057425739}
-  - {fileID: 1408519977}
+  - {fileID: 1090732766}
   m_Father: {fileID: 1648633610}
   m_RootOrder: 0
 --- !u!1001 &1050929294
@@ -771,8 +770,8 @@ Transform:
   m_LocalPosition: {x: 0.5, y: 10, z: 14.9}
   m_LocalScale: {x: 12, y: 20, z: 12}
   m_Children: []
-  m_Father: {fileID: 971279075}
-  m_RootOrder: 3
+  m_Father: {fileID: 1090732766}
+  m_RootOrder: 0
 --- !u!23 &1057425740
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -818,6 +817,35 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1057425738}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1090732765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1090732766}
+  m_Layer: 0
+  m_Name: Tower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1090732766
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1090732765}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1057425739}
+  - {fileID: 1408519977}
+  m_Father: {fileID: 971279075}
+  m_RootOrder: 3
 --- !u!1 &1201555966
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,8 +1079,8 @@ Transform:
   m_LocalPosition: {x: 0.5, y: 25.2, z: 14.9}
   m_LocalScale: {x: 8, y: 20, z: 8}
   m_Children: []
-  m_Father: {fileID: 971279075}
-  m_RootOrder: 4
+  m_Father: {fileID: 1090732766}
+  m_RootOrder: 1
 --- !u!23 &1408519978
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1228,7 +1256,7 @@ GameObject:
   - 114: {fileID: 1522444675}
   m_Layer: 0
   m_Name: Tank
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1274,7 +1302,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1522444674}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1

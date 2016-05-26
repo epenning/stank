@@ -19,7 +19,7 @@ public class TankCharacter : MonoBehaviour
 	void Start()
 	{
 		m_Rigidbody = GetComponent<Rigidbody>();
-		m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+		//m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 	}
 
 
