@@ -13,6 +13,11 @@ public class TankControl : MonoBehaviour
 	public GameObject barrel;
 	public GameObject camera;
 
+	private GameObject grapple;
+	private bool grappleActive = false;
+	private HingeJoint grabHinge;
+	public int speed;
+
 	MouseLook mouseLook;
     
     private void Start()
@@ -27,12 +32,18 @@ public class TankControl : MonoBehaviour
 	private void Update()
 	{
 		// update mouse camera movement
-		mouseLook.LookRotation (turret.transform, barrelPivot.transform, camera.transform);
+		if (!grappleActive) {
+			mouseLook.LookRotation (turret.transform, barrelPivot.transform, camera.transform);
+		}
 
 		// mouse click
 		if (Input.GetMouseButtonDown (0)) {
 			// spawn a firework
-			ShootMissile();
+			ShootMissile ();
+		}
+
+		if (Input.GetMouseButtonDown (1)) {
+			ShootGrapple ();
 		}
 	}
 
@@ -62,4 +73,31 @@ public class TankControl : MonoBehaviour
 		fireworks.transform.localRotation = barrel.transform.rotation;
 		fireworks.transform.localPosition = barrel.transform.TransformPoint (fireworks.transform.localPosition);
 	}
+
+	private void ShootGrapple() 
+	{
+		grappleActive = true;
+
+		GameObject grapple = Instantiate( Resources.Load ("Grapple", typeof(GameObject))) as GameObject;
+
+		grapple.transform.SetParent (barrel.transform);
+		grapple.GetComponent<Rigidbody> ().AddForce (grapple.transform.forward * speed, ForceMode.Impulse);
+	}
+
+//
+//	//To shoot your hook, call this method:
+//	void GrapplingShot(){
+//		rigidbody.velocity = new Vector3 (x, y, z) * speed;
+//		inAir = true;
+//		//This is the direction your hook moves multiplied by speed.
+//	}
+//	void OnCollisionEnter (Collision col) {
+//		if (inAir = true) {
+//			rigidbody.velocity = 0;
+//			inAir = false;
+//			grabHinge = gameObject.AddComponent <HingeJoint>();
+//			grabHinge.connectedBody = col.rigidbody;
+//			//This stops the hook once it collides with something, and creates a HingeJoint to the object it collided with.
+//		}
+//	}
 }
