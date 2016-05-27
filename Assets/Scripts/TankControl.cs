@@ -18,6 +18,8 @@ public class TankControl : MonoBehaviour
 	private HingeJoint grabHinge;
 	public int speed;
 
+	public int grapplePullForce;
+
 	MouseLook mouseLook;
     
     private void Start()
@@ -45,6 +47,10 @@ public class TankControl : MonoBehaviour
 		if (Input.GetMouseButtonDown (1)) {
 			ShootGrapple ();
 		}
+
+		if (Input.GetMouseButtonUp (1)) {
+			ReleaseGrapple ();
+		}
 	}
 
     // Fixed update is called in sync with physics
@@ -56,6 +62,12 @@ public class TankControl : MonoBehaviour
 
         // we use world-relative directions in the case of no main camera
 		m_Move = v*Vector3.forward + h*Vector3.right;
+
+		// if grappling, pull the tank towards the grapple
+		// doesn't work great
+		if (grappleActive && !grapple.GetComponent<GrappleCollisions>().inAir) {
+			GetComponent<Rigidbody>().AddForce(grapplePullForce * (grapple.transform.position - transform.position).normalized);
+		}
 
         // pass all parameters to the character control script
         m_Character.Move(m_Move);
@@ -78,8 +90,6 @@ public class TankControl : MonoBehaviour
 	{
 		grappleActive = true;
 
-		GameObject.Destroy (grapple);
-
 		grapple = Instantiate( Resources.Load ("Grapple", typeof(GameObject))) as GameObject;
 
 		grapple.transform.localPosition = barrel.transform.localPosition;
@@ -89,6 +99,13 @@ public class TankControl : MonoBehaviour
 		grapple.GetComponent<Rigidbody> ().AddForce (grapple.transform.forward * speed, ForceMode.Impulse);
 	
 		grapple.GetComponent<GrappleCollisions> ().inAir = true;
+	}
+
+	private void ReleaseGrapple()
+	{
+		grappleActive = false;
+
+		GameObject.Destroy (grapple);
 	}
 		
 }

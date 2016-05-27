@@ -1278,6 +1278,7 @@ MonoBehaviour:
   barrel: {fileID: 959455757}
   camera: {fileID: 1293972115}
   speed: 100
+  grapplePullForce: 500
 --- !u!114 &1522444676
 MonoBehaviour:
   m_ObjectHideFlags: 0
